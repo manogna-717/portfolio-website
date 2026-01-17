@@ -1,0 +1,87 @@
+#Projects {
+  padding: 6rem 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  scroll-margin-top: 90px;
+}
+
+/* TITLE */
+.projectsTitle {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  font-weight: 600;
+}
+
+/* CARD */
+.projectCard {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  align-items: center;
+}
+
+/* IMAGE */
+.projectCard img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+/* CONTENT */
+.projectContent h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.projectContent h3 a {
+  color: #aaa;
+  font-size: 1.2rem;
+}
+
+.projectContent p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+/* TECH STACK */
+.techStack {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.techStack span {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .projectCard {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .projectCard img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .projectContent h3 {
+    font-size: 1.3rem;
+  }
+
+  .projectContent p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
